@@ -26,10 +26,10 @@ function render() {
 render();
 
 gameCanvas.addEventListener('click', e => {
+
     if (!e.target.classList.contains('column')) {
         return;
     }
-
     const rowIndex = Array.from(gameCanvas.children).indexOf(e.target.parentNode);
     const colIndex = Array.from(e.target.parentNode.children).indexOf(e.target);
 
